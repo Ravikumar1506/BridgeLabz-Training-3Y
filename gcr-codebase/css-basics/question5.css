@@ -1,0 +1,124 @@
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6f9;
+    color: #222222;
+}
+
+/* Header styling */
+header {
+    padding: 35px;
+    text-align: center;
+    background-color: #173f5f;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.3rem;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Pricing section */
+.pricing {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* Individual pricing plans */
+.plan {
+    flex: 1;
+    min-height: 430px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 12px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    /* Smooth hover effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #e8f4ff;
+}
+
+/* Most popular plan */
+.popular {
+    border: 3px solid #e09f00;
+    background-color: #fff8df;
+}
+
+.popular-text {
+    margin: 0 0 10px;
+    color: #d48600;
+    font-weight: bold;
+}
+
+/* Plan headings */
+.plan h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #173f5f;
+}
+
+/* Price styling */
+.price {
+    margin: 15px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222222;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Feature list */
+.plan ul {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    line-height: 2;
+}
+
+/* Styled link as button */
+.button {
+    display: inline-block;
+    margin-top: auto;
+    padding: 12px 25px;
+    background-color: #173f5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #0d2b40;
+}
+
+/* Footer styling */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #173f5f;
+    color: white;
+}

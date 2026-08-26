@@ -1,0 +1,159 @@
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f8;
+    color: #222222;
+}
+
+/* Fixed header stays at the top */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    background-color: #173f5f;
+    color: white;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+/* Dashboard layout */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    min-height: calc(100vh - 70px);
+    padding: 25px;
+    background-color: #263238;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 70px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* Sidebar navigation */
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar nav a {
+    padding: 15px 5px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #546e7a;
+}
+
+.sidebar nav a:hover {
+    background-color: #455a64;
+}
+
+/* Main content */
+.content {
+    margin-left: 230px;
+    width: calc(100% - 230px);
+    padding: 40px;
+}
+
+.content > h2 {
+    margin-top: 0;
+    color: #173f5f;
+}
+
+/* Content boxes */
+.boxes {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.box {
+    flex: 1;
+    min-height: 220px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box h3 {
+    margin-top: 0;
+    color: #173f5f;
+}
+
+.box p {
+    line-height: 1.6;
+}
+
+.box a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #173f5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.box a:hover {
+    background-color: #0d2b40;
+}
+
+/* Sidebar moves above content on smaller screens */
+@media (max-width: 600px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .sidebar nav a {
+        padding: 10px;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}

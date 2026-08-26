@@ -1,0 +1,78 @@
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222222;
+}
+
+/* Header styling */
+header {
+    padding: 35px;
+    text-align: center;
+    background-color: #173f5f;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Author and date section */
+.subheading {
+    width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #e8eef3;
+    border-bottom: 2px solid #173f5f;
+}
+
+.subheading p {
+    margin: 5px 0;
+}
+
+/* Article content */
+article {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Consistent spacing between paragraphs */
+article p {
+    margin: 25px 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Make the first letter larger */
+article p::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Make the first line bold */
+article p::first-line {
+    font-weight: bold;
+}
+
+/* Styling highlighted words */
+mark {
+    background-color: #ffd54f;
+    color: #222222;
+    padding: 2px 5px;
+}
+
+/* Blockquote styling */
+blockquote {
+    margin: 35px 0;
+    padding: 20px 25px;
+    background-color: #e3f2fd;
+    border-left: 6px solid #173f5f;
+    font-size: 1.2rem;
+    font-style: italic;
+}

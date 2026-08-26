@@ -1,0 +1,93 @@
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f8;
+    color: #222222;
+}
+
+/* Header styling */
+header {
+    padding: 30px;
+    text-align: center;
+    background-color: #173f5f;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Team section */
+.team {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Common card styling */
+.card {
+    width: 32%;
+    padding: 25px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #173f5f;
+    font-size: 1.1em;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Highlighted Team Lead card */
+.team-lead {
+    background-color: #fff3cd;
+    border: 3px solid #e0a800;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #173f5f;
+    color: white;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    .team {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
