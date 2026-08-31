@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7 Login Form</title>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+
+    <form>
+        <!-- csrf token is a hidden security value that makes sure the form 
+             submission is coming from our own website and not from some 
+             other malicious website trying to submit the form on user's behalf -->
+        <input type="hidden" name="csrf_token" value="dummy12345token">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+</html>

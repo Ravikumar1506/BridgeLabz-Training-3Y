@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q17 Form Page</title>
+</head>
+<body>
+
+    <h2>Submit Form</h2>
+
+    <!-- form target is set to the iframe name, so result.html loads inside the iframe after submit -->
+    <form action="result.html" method="get" target="resultFrame">
+        <label for="username">Enter Text:</label>
+        <input type="text" id="username" name="username" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <iframe name="resultFrame" title="Result Frame" width="80%" height="150">
+    </iframe>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+
+    <h2>Form successfully submitted.</h2>
+
+</body>
+</html>
