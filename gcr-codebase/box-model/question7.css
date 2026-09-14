@@ -1,0 +1,88 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+.article {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+/* Heading typography */
+.article h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* First paragraph has a different font and size */
+.intro {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Different font family */
+.serif-text {
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+/* Sans-serif text */
+.sans-text {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+/* Readability properties */
+.article p {
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+/* Custom mark, strong and em styles */
+mark {
+    background-color: #ffe066;
+    color: #222;
+    padding: 2px 5px;
+}
+
+strong {
+    color: #c0392b;
+}
+
+em {
+    color: #2874a6;
+}
+
+/* Makes the first letter larger */
+.article p::first-letter {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Makes the first line stand out */
+.article p::first-line {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

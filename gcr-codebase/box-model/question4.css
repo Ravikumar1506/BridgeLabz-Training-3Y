@@ -1,0 +1,77 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+/* Flexbox arranges all cards in one row */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+/* Common card styling */
+.card {
+    width: 250px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Different shadow styles */
+.card-one {
+    box-shadow: 5px 5px 10px #999;
+}
+
+.card-two {
+    box-shadow: 0 8px 20px #999;
+}
+
+.card-three {
+    box-shadow: 10px 10px 25px #888;
+}
+
+/* Text shadow gives depth to headings */
+.card h2 {
+    text-shadow: 2px 2px 3px #aaa;
+}
+
+/* Cards lift up on hover with a larger shadow */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px #777;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,114 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+main {
+    padding: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+/* Attribute selector: selects input elements having type="text" */
+input[type="text"] {
+    border: 3px solid #3498db;
+}
+
+/* Attribute selector: selects links whose href starts with https */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* Pseudo-class: changes list item when mouse is over it */
+li:hover {
+    background-color: #ddd;
+}
+
+/* Pseudo-class: changes input when it is focused */
+input:focus {
+    outline: 2px solid #e67e22;
+}
+
+/* Pseudo-class: selects every second list item */
+li:nth-child(2) {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Pseudo-element: adds content before the heading */
+.items h2::before {
+    content: "★ ";
+}
+
+/* Pseudo-element: adds content after the heading */
+.links h2::after {
+    content: " →";
+}
+
+/* Child combinator (>): selects only direct li children of ul */
+ul > li {
+    padding: 8px;
+}
+
+/* Adjacent sibling combinator (+): selects the first link after h2 */
+.links h2 + a {
+    text-decoration: underline;
+}
+
+/* General sibling combinator (~): selects all links after h2 */
+.links h2 ~ a {
+    margin-right: 15px;
+}
+
+/* Descendant combinator: selects all links inside .links */
+.links a {
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Button hover pseudo-class */
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+button {
+    padding: 12px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

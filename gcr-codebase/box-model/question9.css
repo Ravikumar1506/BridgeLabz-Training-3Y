@@ -1,0 +1,82 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Centers the form */
+.form-section {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #bbb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+/* Different outline styles */
+input[type="text"] {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* Outline changes when input is focused */
+input:focus,
+textarea:focus {
+    outline: 3px solid #e67e22;
+    outline-offset: 4px;
+    border-color: #e67e22;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

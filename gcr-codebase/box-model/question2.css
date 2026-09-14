@@ -1,0 +1,76 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Flexbox centers the boxes horizontally and vertically */
+.boxes {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+/* Box using px units */
+.box-one {
+    width: 200px;
+    height: 150px;
+    background-color: #ffd6a5;
+}
+
+/* Box using percentage and em units */
+.box-two {
+    width: 40%;
+    height: 12em;
+    min-height: 180px;
+    background-color: #bde0fe;
+}
+
+/* Box using percentage and vh units */
+.box-three {
+    width: 30%;
+    height: 30vh;
+    min-height: 180px;
+    max-width: 350px;
+    background-color: #caffbf;
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box-two,
+    .box-three {
+        width: 80%;
+    }
+}

@@ -1,0 +1,75 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Horizontal navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 15px;
+    gap: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #444;
+    border-color: white;
+}
+
+/* Active link styling */
+nav a.active {
+    background-color: #3498db;
+    border-bottom: 3px solid white;
+}
+
+.content {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 35px;
+}
+
+.content p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Navbar becomes vertical below 700px */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,77 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Flexbox arranges the boxes horizontally */
+.transformations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 20px;
+    flex-wrap: wrap;
+}
+
+.transform-item {
+    width: 150px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87ceeb;
+    border: 3px solid #222;
+    transition: all 0.4s ease;
+}
+
+/* Rotate transformation */
+.rotate:hover {
+    transform: rotate(20deg);
+}
+
+/* Scale transformation */
+.scale:hover {
+    transform: scale(1.2);
+}
+
+/* Translate transformation */
+.translate:hover {
+    transform: translateY(-20px);
+}
+
+/* Skew transformation */
+.skew:hover {
+    transform: skew(15deg);
+}
+
+.transform-item p {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .transformations {
+        flex-direction: column;
+    }
+}
