@@ -1,0 +1,168 @@
+/* Apply border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 15px 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    color: #3498db;
+}
+
+/* Flexbox centers the main card */
+main {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.main-card {
+    width: 750px;
+    max-width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #bbb;
+}
+
+/* Image section */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #3498db;
+}
+
+/* Content section */
+.content-section {
+    flex: 1;
+}
+
+.content-section h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Focus effect */
+input:focus {
+    outline: 3px solid #aed6f1;
+    border-color: #3498db;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #217dbb;
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: 3px solid #f1c40f;
+    outline-offset: 2px;
+}
+
+button.reset {
+    background-color: white;
+    color: #3498db;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        width: 180px;
+        height: 180px;
+    }
+}

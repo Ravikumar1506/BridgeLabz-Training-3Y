@@ -1,0 +1,85 @@
+/* Element selector: styles all paragraph elements */
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Class selector: styles elements with class="highlight" */
+.highlight {
+    background-color: #ffeaa7;
+    padding: 10px;
+}
+
+/* ID selector: styles the element with id="special-text" */
+#special-text {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Attribute selector: selects links having an href attribute */
+a[href] {
+    color: #2980b9;
+}
+
+/* Child combinator (>): selects direct li children of ul */
+ul > li {
+    padding: 8px;
+    background-color: #d6eaf8;
+    margin: 5px;
+}
+
+/* Descendant combinator: selects p inside .list-box */
+.list-box p {
+    color: #8e44ad;
+}
+
+/* Adjacent sibling combinator (+): selects p immediately after h3 */
+.combinator-box h3 + p {
+    color: #27ae60;
+}
+
+/* General sibling combinator (~): selects all p after h3 */
+.combinator-box h3 ~ p {
+    padding-left: 10px;
+}
+
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+.selector-section {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#main-heading {
+    text-align: center;
+}
+
+.list-box,
+.combinator-box {
+    margin-top: 25px;
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

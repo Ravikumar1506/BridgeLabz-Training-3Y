@@ -1,0 +1,101 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Flexbox distributes all examples evenly */
+.effects {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.effect-card {
+    width: 230px;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px #bbb;
+
+    /* Smooth transition for all effects */
+    transition: all 0.3s ease;
+}
+
+/* Card grows slightly and gets a bigger shadow */
+.effect-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 25px #999;
+}
+
+/* Button styling */
+.effect-card button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button grows and changes color */
+.effect-card button:hover {
+    transform: scale(1.1);
+    background-color: #e67e22;
+    box-shadow: 0 5px 10px #aaa;
+}
+
+/* Active effect */
+.effect-card button:active {
+    transform: scale(0.95);
+}
+
+/* Focus effect */
+.effect-card button:focus {
+    outline: 3px solid #f1c40f;
+    outline-offset: 3px;
+}
+
+.effect-card a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Link changes color and grows on hover */
+.effect-card a:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .effects {
+        flex-direction: column;
+        align-items: center;
+    }
+}

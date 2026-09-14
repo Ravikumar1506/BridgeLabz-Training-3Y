@@ -1,0 +1,74 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Flexbox places the two boxes side by side */
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+/* Both boxes have the same declared width and padding */
+.box {
+    width: 300px;
+    padding: 30px;
+    border: 5px solid #222;
+    text-align: center;
+}
+
+/* Default box-sizing is content-box */
+.default-box {
+    box-sizing: content-box;
+    background-color: #ffd6d6;
+}
+
+/* Border-box includes padding and border in the width */
+.border-box {
+    box-sizing: border-box;
+    background-color: #d6eaff;
+}
+
+.explanation {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.explanation h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Stack boxes on smaller screens */
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+}

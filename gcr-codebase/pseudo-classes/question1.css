@@ -1,0 +1,82 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Flexbox keeps all examples in one row */
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.example {
+    width: 210px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* :hover changes the link color */
+.example a:hover {
+    color: #e74c3c;
+}
+
+/* :focus changes the button when it receives focus */
+.example button:focus {
+    outline: 3px solid #3498db;
+    background-color: #d6eaf8;
+}
+
+/* :active changes the button while it is being pressed */
+.active-button:active {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* :nth-child() styles the second list item */
+.example li:nth-child(2) {
+    background-color: #ffeaa7;
+    font-weight: bold;
+}
+
+.example li {
+    padding: 8px;
+    margin: 5px;
+}
+
+.example button,
+.example a {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .examples {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,112 @@
+/* Basic page styling with a soft gradient */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Flexbox centers the UI card */
+main {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.ui-card {
+    width: 450px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #bbb;
+}
+
+/* Card contents are arranged using Flexbox */
+.ui-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ui-card h2 {
+    text-align: center;
+}
+
+.search-area {
+    display: flex;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search-area input {
+    flex: 1;
+}
+
+/* Button styling */
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #217dbb;
+    transform: translateY(-2px);
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+    outline: 3px solid #aed6f1;
+    border-color: #3498db;
+}
+
+.button-area {
+    display: flex;
+    gap: 10px;
+}
+
+.button-area button {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    .search-area {
+        flex-direction: column;
+    }
+
+    .button-area {
+        flex-direction: column;
+    }
+}
