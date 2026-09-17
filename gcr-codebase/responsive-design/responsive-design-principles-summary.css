@@ -1,0 +1,106 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+/* Grid creates three boxes */
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Principle box styling */
+.principle-box {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #bbb;
+
+    /* Smooth hover transition */
+    transition: background 0.4s ease, color 0.4s ease,
+                transform 0.3s ease;
+}
+
+.principle-box h2 {
+    color: #2980b9;
+    margin-top: 0;
+}
+
+.principle-box p {
+    line-height: 1.6;
+}
+
+/* CSS code example */
+pre {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+/* Hover gradient and text color change */
+.principle-box:hover {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    transform: translateY(-8px);
+}
+
+/* Change heading color on hover */
+.principle-box:hover h2 {
+    color: white;
+}
+
+/* Keep code readable on hover */
+.principle-box:hover pre {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #222;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+    .principles {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 35px;
+    }
+}
+
+/* Mobile: single-column layout */
+@media (max-width: 600px) {
+    .principles {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+        gap: 20px;
+    }
+}

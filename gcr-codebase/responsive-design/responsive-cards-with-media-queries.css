@@ -1,0 +1,81 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Flexbox creates four columns on desktop */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 30px;
+}
+
+/* Each card gets equal space */
+.card {
+    flex: 1;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #bbb;
+
+    /* Smooth background color change */
+    transition: background-color 0.3s ease;
+}
+
+/* Card background changes on hover */
+.card:hover {
+    background-color: #d6eaf8;
+}
+
+.card h2 {
+    color: #2980b9;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Tablet: two columns */
+@media (max-width: 900px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 40px);
+    }
+}
+
+/* Mobile: one column */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .card {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

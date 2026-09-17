@@ -1,0 +1,121 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+
+    /* Keeps footer at the bottom */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header uses Flexbox to place logo and navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Main area takes available space */
+main {
+    flex: 1;
+}
+
+/* Feature boxes are arranged horizontally */
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 60px 30px;
+}
+
+/* Feature box styling */
+.feature-box {
+    flex: 1;
+    max-width: 300px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px #bbb;
+
+    /* Smooth scaling effect */
+    transition: transform 0.3s ease;
+}
+
+/* Box scales slightly on hover */
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+.feature-box h2 {
+    color: #2980b9;
+}
+
+.feature-box p {
+    line-height: 1.6;
+}
+
+/* Footer is centered at the bottom */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Feature boxes stack below 750px */
+@media (max-width: 750px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+/* Header becomes vertical on small screens */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

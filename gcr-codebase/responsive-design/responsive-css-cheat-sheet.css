@@ -1,0 +1,107 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+/* CSS Grid creates the cheat sheet layout */
+.cheat-sheet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Topic box styling */
+.topic {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #bbb;
+
+    /* Smooth hover effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Heading acts as the key */
+.topic h2 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+/* Description acts as the value */
+.topic p {
+    line-height: 1.6;
+}
+
+/* Hover effect */
+.topic:hover {
+    transform: translateY(-8px);
+    background-color: #eaf4fb;
+}
+
+/* Code examples */
+code {
+    background-color: #eee;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+/* Tablet: two columns */
+@media (max-width: 900px) {
+    .cheat-sheet {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 35px;
+    }
+}
+
+/* Mobile: stacked rows */
+@media (max-width: 700px) {
+    .cheat-sheet {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 25px 20px;
+    }
+
+    /* Heading works like a key and text works like its value */
+    .topic {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        align-items: start;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .topic h2 {
+        margin: 0;
+    }
+
+    .topic p {
+        margin: 0;
+    }
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

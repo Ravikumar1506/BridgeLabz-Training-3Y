@@ -1,0 +1,113 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Flexbox arranges cards horizontally */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 60px 25px;
+}
+
+/* Card styling */
+.card {
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #bbb;
+
+    /* Fade-in animation when page loads */
+    animation: fadeIn 1s ease-in-out;
+
+    /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Different image filters */
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+
+    /* Smoothly removes the filter */
+    transition: filter 0.3s ease;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+/* Remove filter and lift card on hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px #999;
+}
+
+.card:hover img {
+    filter: none;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.card-content p {
+    line-height: 1.6;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Stack cards below 800px */
+@media (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 400px;
+    }
+}

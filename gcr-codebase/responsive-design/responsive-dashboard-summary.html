@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard Summary</title>
+    <link rel="stylesheet" href="responsive-dashboard-summary.css">
+</head>
+<body>
+
+    <!-- Dashboard Header -->
+    <header>
+        <h1>Responsive Dashboard</h1>
+        <p>CSS Concepts Summary</p>
+    </header>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside>
+            <h2>Dashboard</h2>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Filters</a>
+                <a href="#">Typography</a>
+                <a href="#">Media Queries</a>
+                <a href="#">Cheat Sheet</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h2>CSS Concepts</h2>
+
+            <section class="cards">
+
+                <!-- Filters Card -->
+                <article class="card">
+                    <h3>Filters</h3>
+                    <p>
+                        CSS filters can change the appearance of
+                        images and other elements.
+                    </p>
+                    <code>filter: grayscale(100%);</code>
+                </article>
+
+                <!-- Typography Card -->
+                <article class="card">
+                    <h3>Typography</h3>
+                    <p>
+                        Responsive typography adjusts text size
+                        according to the screen size.
+                    </p>
+                    <code>font-size: clamp(1rem, 2vw, 2rem);</code>
+                </article>
+
+                <!-- Media Queries Card -->
+                <article class="card">
+                    <h3>Media Queries</h3>
+                    <p>
+                        Media queries apply different CSS styles
+                        for different screen sizes.
+                    </p>
+                    <code>@media (max-width: 750px)</code>
+                </article>
+
+                <!-- Cheat Sheet Links Card -->
+                <article class="card">
+                    <h3>Cheat Sheet Links</h3>
+                    <p>Useful topics for responsive design:</p>
+
+                    <div class="links">
+                        <a href="#">CSS Grid</a>
+                        <a href="#">Flexbox</a>
+                        <a href="#">Breakpoints</a>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>Responsive Dashboard Practice</p>
+    </footer>
+
+</body>
+</html>

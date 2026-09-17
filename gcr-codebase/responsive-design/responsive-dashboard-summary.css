@@ -1,0 +1,191 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header styling */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+/* Main dashboard uses CSS Grid */
+.dashboard {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 650px;
+}
+
+/* Sidebar styling */
+aside {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+/* Sidebar navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+
+    /* Smooth hover transition */
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Main content */
+main {
+    padding: 40px;
+}
+
+main > h2 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+/* Cards use Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Dashboard card styling */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 10px #bbb;
+
+    /* Load animation */
+    animation: loadCard 0.8s ease-in-out;
+
+    /* Hover transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px #999;
+}
+
+.card h3 {
+    color: #2980b9;
+    margin-top: 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Code styling */
+code {
+    display: block;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Cheat sheet links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.links a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Simple load animation */
+@keyframes loadCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive layout below 750px */
+@media (max-width: 750px) {
+
+    /* Sidebar moves to the top */
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        order: -1;
+    }
+
+    /* Navigation becomes horizontal */
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Main content comes below sidebar */
+    main {
+        padding: 30px 20px;
+    }
+
+    /* Cards stack vertically */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+}

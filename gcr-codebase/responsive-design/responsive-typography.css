@@ -1,0 +1,61 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Centers the typography section */
+.typography-section {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #bbb;
+}
+
+/* clamp() makes the heading responsive */
+.typography-section h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+/* clamp() makes paragraph text responsive */
+.typography-section p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Adjust spacing and line-height below 700px */
+@media (max-width: 700px) {
+    .typography-section {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+
+    .typography-section h1 {
+        margin-bottom: 18px;
+    }
+
+    .typography-section p {
+        line-height: 1.5;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
