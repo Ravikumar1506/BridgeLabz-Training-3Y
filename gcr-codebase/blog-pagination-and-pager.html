@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="bg-dark text-white text-center py-4">
+    <h1>Tech Journal</h1>
+    <p class="mb-0">Latest stories from the world of technology</p>
+</header>
+
+<main class="container py-5">
+    <section>
+        <article class="border rounded p-4 mb-3">
+            <h2>Building Better Web Experiences</h2>
+            <p>Modern websites combine responsive layouts, accessible content and simple interactions.</p>
+        </article>
+
+        <article class="border rounded p-4">
+            <h2>Learning New Technologies</h2>
+            <p>Consistent practice and small projects are great ways to build technical skills.</p>
+        </article>
+    </section>
+
+    <nav class="mt-5" aria-label="Blog pages">
+        <!-- justify-content-center centers the pagination -->
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+
+    <div class="d-flex justify-content-center gap-2 mt-4">
+        <a href="#" class="btn btn-outline-secondary">Newer Posts</a>
+        <a href="#" class="btn btn-outline-secondary">Older Posts</a>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2026 Tech Journal</p>
+</footer>
+
+</body>
+</html>
